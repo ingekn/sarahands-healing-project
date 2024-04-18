@@ -1,11 +1,18 @@
 const images = document.querySelectorAll(".slider img"); // Get all the images
+const dots = document.querySelectorAll(".dot"); // Get all the dots
 let currentIndex = 0; // Start with the first image
+let intervalId; // Variable to store the interval ID for automatic sliding
 
 function showImage(index) {
   images.forEach((image) => {
     image.style.display = "none"; // Hide all images
   });
+  dots.forEach((dot) => {
+    dot.classList.remove("active"); // Remove 'active' class from all dots
+  });
+
   images[index].style.display = "block"; // Show the selected image
+  dots[index].classList.add("active"); // Add 'active' class to the corresponding dot
 }
 
 function nextImage() {
@@ -24,6 +31,18 @@ function previousImage() {
   showImage(currentIndex);
 }
 
+function navigateToImage(index) {
+  currentIndex = index;
+  showImage(currentIndex);
+  clearInterval(intervalId); // Clear the interval to stop automatic sliding
+}
+
 showImage(currentIndex); // Show the initial image
 
-setInterval(nextImage, 4000); // Automatically transition to the next image every 3 seconds (adjust the duration as needed)
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    navigateToImage(index);
+  });
+});
+
+intervalId = setInterval(nextImage, 3000); // Automatically transition to the next image every 3 seconds (adjust the duration as needed)
