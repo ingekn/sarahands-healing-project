@@ -13,6 +13,7 @@ function showImage(index) {
 
   images[index].style.display = "block"; // Show the selected image
   dots[index].classList.add("active"); // Add 'active' class to the corresponding dot
+  images[index].classList.add("cover");
 }
 
 function nextImage() {
