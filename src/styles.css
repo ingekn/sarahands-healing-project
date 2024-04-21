@@ -7,44 +7,38 @@
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-body {
-  width: 1100px;
-}
-header {
-  margin-top: 60px;
-}
-main {
-  width: 600px;
-  margin: 40px auto;
-}
 .slider {
-  width: 100%;
-  height: 100%;
   position: relative;
 }
 
-.slider img {
-  display: none; /* Hide images by default */
-  width: 100%;
-  height: 450px;
-  object-fit: contain;
-}
-.dots {
-  list-style: none;
+.image-container {
   display: flex;
-  justify-content: center;
-  margin-top: 15px;
+  width: 100%;
+  overflow: hidden;
 }
 
-.dot {
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background-color: gray;
-  margin: 0 5px;
+.image-container img {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 }
 
-.dot.active {
-  background-color: black;
+.previous {
+  left: 0;
+}
+
+.next {
+  right: 0;
 }

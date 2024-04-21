@@ -1,22 +1,22 @@
-const images = document.querySelectorAll(".slider img"); // Get all the images
-const dots = document.querySelectorAll(".dot"); // Get all the dots
+const imageContainer = document.querySelector(".image-container");
+const images = Array.from(imageContainer.querySelectorAll("img"));
 let currentIndex = 0; // Start with the first image
-let intervalId; // Variable to store the interval ID for automatic sliding
+const previousArrow = document.querySelector(".previous");
+const nextArrow = document.querySelector(".next");
 
+// Variable to hold the interval ID
+let intervalId;
+
+// Function to show the image at a given index
 function showImage(index) {
   images.forEach((image) => {
     image.style.display = "none"; // Hide all images
   });
-  dots.forEach((dot) => {
-    dot.classList.remove("active"); // Remove 'active' class from all dots
-  });
-
   images[index].style.display = "block"; // Show the selected image
-  dots[index].classList.add("active"); // Add 'active' class to the corresponding dot
-  images[index].classList.add("cover");
 }
 
-function nextImage() {
+// Function to show the next image
+function showNextImage() {
   currentIndex++;
   if (currentIndex >= images.length) {
     currentIndex = 0; // Wrap around to the first image if end is reached
@@ -24,7 +24,8 @@ function nextImage() {
   showImage(currentIndex);
 }
 
-function previousImage() {
+// Function to show the previous image
+function showPreviousImage() {
   currentIndex--;
   if (currentIndex < 0) {
     currentIndex = images.length - 1; // Wrap around to the last image if beginning is reached
@@ -32,18 +33,36 @@ function previousImage() {
   showImage(currentIndex);
 }
 
-function navigateToImage(index) {
-  currentIndex = index;
-  showImage(currentIndex);
-  clearInterval(intervalId); // Clear the interval to stop automatic sliding
+// Start with the initial image
+showImage(currentIndex);
+
+// Set up the interval to automatically transition to the next image every 3 seconds
+intervalId = setInterval(showNextImage, 3000);
+
+// Function to stop the automatic image transition
+function stopSlider() {
+  clearInterval(intervalId);
 }
 
-showImage(currentIndex); // Show the initial image
-
-dots.forEach((dot, index) => {
-  dot.addEventListener("click", () => {
-    navigateToImage(index);
-  });
+// Add event listeners to the image container and arrows
+imageContainer.addEventListener("click", stopSlider);
+previousArrow.addEventListener("click", function () {
+  showPreviousImage();
+  stopSlider();
 });
-
-intervalId = setInterval(nextImage, 3000); // Automatically transition to the next image every 3 seconds (adjust the duration as needed)
+nextArrow.addEventListener("click", function () {
+  showNextImage();
+  stopSlider();
+});
+// Remove the event listener on the image container since the anchor links handle navigation
+// imageContainer.removeEventListener("click", stopSlider);
+// Event listener for each image
+// images.forEach((image, index) => {
+//     image.addEventListener("click", () => {
+//         // Stop the slider
+//         stopSlider();
+//         // Redirect the user to a specific part of the page or another URL
+//         const targetUrl = '#section' + (index + 1); // Replace with desired URL or section ID
+//         window.location.hash = targetUrl; // Use window.location.hash to navigate to a specific section of the page
+//     });
+// });
