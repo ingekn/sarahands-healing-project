@@ -42,7 +42,7 @@
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: var(--tertiary-color);
+  background-color: var(--secondary-color);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -84,10 +84,11 @@ p {
   background: var(--primary-color);
   text-decoration: none;
   font-family: var(--default-font-family);
+  border: 1px solid var(--primary-color);
 }
 .btn-branding:hover {
-  color: black;
-  border: 1px solid black;
+  color: white;
+  border: 6px solid var(--primary-color);
   background: var(--tertiary-color);
 }
 
@@ -95,7 +96,7 @@ p {
   background-color: var(--primary-color);
 }
 .email-form {
-  padding: 80px;
+  padding: 50px;
   background-color: var(--tertiary-color);
   background-size: cover;
   border: 1px solid var(--primary-color);
@@ -103,11 +104,24 @@ p {
   color: white;
   font-size: 21px;
 }
-input {
+.border-form {
+  border: 1px solid var(--primary-color);
+  padding: 40px;
+  background-color: var(--tertiary-color);
+}
+.input {
+  margin: 10px;
+  padding-left: 25px;
+  border: 1px solid white;
+  width: 50%;
+  font-size: 19px;
   border-radius: 20px;
   height: 50px;
+  font-family: var(--default-font-family);
 }
-
-#name {
-  padding-left: 5px;
+.input:focus-visible {
+  border: 3px solid var(--primary-color);
+}
+.email-form-img {
+  width: 500px;
 }
