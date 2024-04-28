@@ -96,7 +96,7 @@ p {
   background-color: var(--primary-color);
 }
 .email-form {
-  padding: 50px;
+  padding: 20px;
   background-color: var(--tertiary-color);
   background-size: cover;
   border: 1px solid var(--primary-color);
@@ -104,11 +104,11 @@ p {
   color: white;
   font-size: 21px;
 }
-.border-form {
+/* .border-form {
   border: 1px solid var(--primary-color);
-  padding: 40px;
+  padding: 20px;
   background-color: var(--tertiary-color);
-}
+} */
 .input {
   margin: 10px;
   padding-left: 25px;
@@ -122,6 +122,6 @@ p {
 .input:focus-visible {
   border: 3px solid var(--primary-color);
 }
-.email-form-img {
+/* .email-form-img {
   width: 500px;
-}
+} */
