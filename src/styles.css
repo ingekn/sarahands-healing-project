@@ -3,6 +3,15 @@
   --secondary-color: #cadefc;
   --tertiary-color: #c3bef0;
   --fourth-color: #cca8e9;
+  --fifth-color: #ffb6b9;
+  --sixth-color: #bbded6;
+  --seventh-color: #61c0bf;
+  --eigth-color: #fae3d9;
+  --brigth-yellow-color: #fdfdc4;
+  --bright-pink-color: #eca0b6;
+  --light-orange-color: #ffe8cf;
+  --light-pink-color: #ffdede;
+  --light-green-color: #ccffec;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
   --fun-font-family: "Sedan", serif;
@@ -19,8 +28,31 @@
   font-weight: 400;
   font-style: italic;
 } */
-/* header and image slider */
 
+/* navbar and image slider */
+.logo {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 10px 10px 10px 40px;
+  border: 1px solid var(--fourth-color);
+  box-shadow: var(--box-shadow);
+}
+.nav-bar {
+  background-color: #fcfcf6;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: var(--fourth-color);
+  opacity: 100%;
+}
+.nav-link {
+  font-family: var(--fun-font-family);
+  font-size: 17px;
+  font-weight: bold;
+  opacity: 40%;
+  color: black;
+}
 .slider {
   position: relative;
 }
@@ -42,7 +74,7 @@
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  background-color: var(--secondary-color);
+  background-color: #fcfcf6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +88,7 @@
 .next {
   right: 0;
 }
-/* end of header and image slider */
+/* end of navbar and image slider */
 section {
   padding: 20px;
   background-color: white;
@@ -85,6 +117,7 @@ p {
   text-decoration: none;
   font-family: var(--default-font-family);
   border: 1px solid var(--primary-color);
+  transition: all 100ms ease-in-out;
 }
 .btn-branding:hover {
   color: white;
@@ -129,6 +162,22 @@ p {
 }
 .two-columns-grid {
   grid-template-columns: 2fr 1fr;
+}
+.about .two-columns-grid {
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+.about {
+  padding: 30px;
+}
+.about-me {
+  margin: 80px;
+}
+.personal-img img {
+  margin: 0 auto;
+  border-radius: 60%;
+  border: 1px solid var(--secondary-color);
+  justify-content: center;
 }
 
 @media (max-width: 880px) {
