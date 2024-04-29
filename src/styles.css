@@ -106,25 +106,36 @@ p {
   font-family: var(--fun-font-family);
   padding: 20px;
 }
-.btn-branding {
+.btn {
   margin: 10px;
   padding: 15px 30px;
   border-radius: 40px;
   line-height: 27px;
   font-size: 18px;
-  color: black;
-  background: var(--primary-color);
   text-decoration: none;
   font-family: var(--default-font-family);
-  border: 1px solid var(--primary-color);
   transition: all 100ms ease-in-out;
 }
-.btn-branding:hover {
+.btn-form {
+  color: black;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.btn-form:hover {
   color: white;
   border: 6px solid var(--primary-color);
   background: var(--tertiary-color);
 }
-
+.btn-branding {
+  color: white;
+  border: 6px solid var(--primary-color);
+  background: var(--tertiary-color);
+}
+.btn-branding:hover {
+  color: black;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
 .container {
   background-color: var(--primary-color);
 }
@@ -168,7 +179,7 @@ p {
   grid-gap: 20px;
 }
 .about {
-  padding: 30px;
+  padding: 40px;
 }
 .about-me {
   margin: 80px;
