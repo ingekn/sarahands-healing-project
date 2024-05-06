@@ -184,7 +184,7 @@ p {
 .about-me {
   margin: 80px;
 }
-.personal-img img {
+.personal-img {
   margin: 0 auto;
   border-radius: 60%;
   border: 1px solid var(--secondary-color);
@@ -206,8 +206,20 @@ p {
   .input {
     margin: 10px;
     padding-left: 15px;
-    width: 50%;
+    width: 70%;
+    font-size: 13px;
+  }
+  .email-form {
+    font-size: 13px;
+  }
+  .btn {
+    line-height: 20px;
     font-size: 14px;
-    height: 40px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .about {
+    padding: 0px;
   }
 }
