@@ -39,7 +39,9 @@
   box-shadow: var(--box-shadow);
 }
 .nav-bar {
-  background-color: #fcfcf6;
+  /* background-color: var(--tertiary-color); */
+  background-color: white;
+  box-shadow: var(--box-shadow);
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
@@ -55,6 +57,7 @@
 }
 .slider {
   position: relative;
+  box-shadow: var(--box-shadow);
 }
 
 .image-container {
