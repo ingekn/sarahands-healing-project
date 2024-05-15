@@ -184,6 +184,9 @@ p {
 .about {
   padding: 40px;
 }
+.about-page-section {
+  box-shadow: var(--box-shadow);
+}
 .about-me {
   margin: 80px;
 }
