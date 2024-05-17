@@ -101,7 +101,8 @@ section {
   text-align: center;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-family: var(--heading-font-family);
   padding: 5px 20px;
 }
@@ -142,6 +143,7 @@ p {
 .container {
   background-color: var(--primary-color);
 }
+/* form  */
 .email-form {
   padding: 40px;
   background-color: var(--tertiary-color);
@@ -169,7 +171,7 @@ p {
 .input:focus-visible {
   border: 3px solid var(--primary-color);
 }
-
+/* grids */
 .grid {
   display: grid;
   /* grid-gap: 50px; */
@@ -177,6 +179,8 @@ p {
 .two-columns-grid {
   grid-template-columns: 2fr 1fr;
 }
+
+/* about page */
 .about .two-columns-grid {
   grid-template-columns: 1fr 2fr;
   grid-gap: 20px;
@@ -198,7 +202,41 @@ p {
   border: 1px solid var(--secondary-color);
   justify-content: center;
 }
-
+/* services page */
+.services h2,
+h3 {
+  color: var(--fifth-color);
+}
+h3 {
+  margin-top: 40px;
+}
+.services .two-columns-grid {
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+.service {
+  padding: 20px;
+  margin-top: 40px;
+}
+.btn-booking {
+  color: black;
+  background: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border: 6px solid var(--fifth-color);
+}
+.btn-booking:hover {
+  color: white;
+  border: 6px solid var(--primary-color);
+  background: var(--fifth-color);
+}
+.services img {
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 20%;
+  border: 1px solid var(--tertiary-color);
+  justify-content: center;
+}
 @media (max-width: 880px) {
   .two-columns-grid {
     grid-template-columns: 1fr;
