@@ -193,7 +193,7 @@ p {
   box-shadow: var(--box-shadow);
 }
 .about-me {
-  margin: 80px;
+  margin: 40px;
 }
 .personal-img {
   margin: 0 auto;
@@ -244,6 +244,7 @@ h3 {
   .about .two-columns-grid {
     grid-template-columns: 1fr;
   }
+
   .email-form-img {
     display: none;
   }
@@ -251,6 +252,12 @@ h3 {
     padding: 20px;
     /* width: 500px; */
     font-size: 16px;
+  }
+  .email-form p {
+    font-size: 15px;
+  }
+  section {
+    padding: 0px;
   }
   .input {
     margin: 10px;
@@ -266,12 +273,26 @@ h3 {
     font-size: 14px;
   }
   p {
-    font-size: 14px;
+    font-size: 13px;
   }
   .about {
     padding: 20px;
   }
   .personal-img {
     margin: 10px;
+  }
+}
+@media (max-width: 580px) {
+  .about {
+    padding: 0px;
+  }
+  .about-me {
+    margin: 20px;
+  }
+  .personal-img {
+    display: none;
+  }
+  .services .two-columns-grid {
+    grid-template-columns: 1fr;
   }
 }
