@@ -121,7 +121,7 @@ p {
   transition: all 100ms ease-in-out;
 }
 .btn-form {
-  color: black;
+  color: rgb(85, 85, 85);
   background: var(--primary-color);
   border: 1px solid var(--primary-color);
 }
@@ -168,9 +168,13 @@ p {
   height: 50px;
   font-family: var(--default-font-family);
 }
-.input:focus-visible {
-  border: 3px solid var(--primary-color);
+input[type="email"],
+input[type="tel"],
+input[type="text"] {
+  color: gray;
+  border-color: gray;
 }
+
 /* grids */
 .grid {
   display: grid;
