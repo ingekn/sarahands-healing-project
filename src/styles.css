@@ -185,6 +185,9 @@ input[type="email"] {
   margin-left: 20px;
   margin-bottom: 10px;
 }
+.privacy-disclaimer {
+  font-size: 11px;
+}
 /* grids */
 .grid {
   display: grid;
