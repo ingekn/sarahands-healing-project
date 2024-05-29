@@ -96,9 +96,6 @@ section {
   padding: 20px;
   background-color: white;
 }
-.form {
-  border: 2px solid var(--tertiary-color);
-}
 .mission {
   padding: 20px;
   text-align: center;
