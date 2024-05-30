@@ -206,7 +206,8 @@ input[type="email"] {
   padding: 40px;
 }
 .about-page-section,
-.services {
+.services-page-section,
+.contact-page-section {
   box-shadow: var(--box-shadow);
 }
 .about-me {
@@ -262,7 +263,7 @@ h3 {
 }
 .contact a {
   color: #c3bef0;
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 @media (max-width: 1400px) {
   .input {
