@@ -278,6 +278,11 @@ h3 {
     padding: 10px;
   }
 }
+
+.pricelist-img {
+  display: block;
+  margin: 0 auto;
+}
 @media (max-width: 880px) {
   .two-columns-grid {
     grid-template-columns: 1fr;
