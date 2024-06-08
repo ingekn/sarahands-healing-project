@@ -152,6 +152,10 @@ p {
   color: white;
   font-size: 21px;
 }
+
+img {
+  overflow: clip;
+}
 /* .border-form {
   border: 1px solid var(--primary-color);
   padding: 20px;
@@ -191,8 +195,9 @@ input[type="email"] {
 /* grids */
 .grid {
   display: grid;
-  /* grid-gap: 50px; */
+  grid-gap: 0;
 }
+
 .two-columns-grid {
   grid-template-columns: 2fr 1fr;
 }
@@ -265,19 +270,7 @@ h3 {
   color: #c3bef0;
   /* text-decoration: none; */
 }
-@media (max-width: 1400px) {
-  .input {
-    margin: 5px;
-    margin-bottom: 8px;
-    padding-left: 23px;
-    border: 1px solid white;
-    width: 40%;
-    font-size: 17px;
-  }
-  section {
-    padding: 10px;
-  }
-}
+
 /* prices page  */
 .pricelist-img {
   display: block;
@@ -304,17 +297,32 @@ footer .social-links a:hover {
   margin: 60px;
 }
 /* end footer  */
-@media (max-width: 880px) {
+@media (max-width: 1400px) {
+  .input {
+    margin: 5px;
+    margin-bottom: 8px;
+    padding-left: 23px;
+    border: 1px solid white;
+    width: 40%;
+    font-size: 17px;
+  }
+  section {
+    padding: 10px;
+  }
+}
+@media (max-width: 1200px) {
+  .email-form-img {
+    display: none;
+  }
   .two-columns-grid {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 880px) {
   .about .two-columns-grid {
     grid-template-columns: 1fr;
   }
 
-  .email-form-img {
-    display: none;
-  }
   .email-form {
     padding: 20px;
     /* width: 500px; */
