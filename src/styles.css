@@ -286,6 +286,24 @@ h3 {
   /* padding: 20px;
   border: 1px solid var(--light-orange-color); */
 }
+/* footer  */
+footer .social-links a {
+  margin: 30px 30px;
+  color: var(--bright-pink-color);
+  background-color: var(--branding-color);
+  padding: 10px 20px;
+  font-size: 40px;
+  border-radius: 50%;
+  transition: all 250ms ease-in-out;
+}
+footer .social-links a:hover {
+  color: white;
+  background: var(--bright-pink-color);
+}
+.contact-links {
+  margin: 60px;
+}
+/* end footer  */
 @media (max-width: 880px) {
   .two-columns-grid {
     grid-template-columns: 1fr;
