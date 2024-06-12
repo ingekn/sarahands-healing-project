@@ -75,18 +75,24 @@ nextArrow.addEventListener("click", function () {
 //     updateContent(selectedLanguage);
 //   });
 
-// function updateContent(language) {
-//   // Get all elements with the language-specific classes
-//   var elements = document.getElementsByClassName(language);
+const languageSelector = document.getElementById("languageSelect");
+const languageSections = document.querySelectorAll(".language");
 
-//   // Hide all elements
-//   for (var i = 0; i < elements.length; i++) {
-//     elements[i].style.display = "none";
-//   }
+// Function to show the selected language and hide others
+function updateLanguage() {
+  const selectedLanguage = languageSelector.value;
+  console.log(selectedLanguage);
+  languageSections.forEach((section) => {
+    if (section.classList.contains(selectedLanguage)) {
+      section.classList.add("show");
+    } else {
+      section.classList.remove("show");
+    }
+  });
+}
 
-//   // Show elements with the selected language class
-//   var selectedElements = document.getElementsByClassName(language);
-//   for (var j = 0; j < selectedElements.length; j++) {
-//     selectedElements[j].style.display = "block";
-//   }
-// }
+// Set default language on page load
+updateLanguage("english");
+
+// Update language on change
+languageSelector.addEventListener("change", updateLanguage);

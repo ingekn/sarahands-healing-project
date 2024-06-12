@@ -97,7 +97,7 @@ section {
   background-color: white;
 }
 .mission {
-  padding: 20px;
+  padding: 30px 25px 15px 25px;
   text-align: center;
 }
 h1,
@@ -212,7 +212,8 @@ input[type="email"] {
 }
 .about-page-section,
 .services-page-section,
-.contact-page-section {
+.contact-page-section,
+.prices-page-section {
   box-shadow: var(--box-shadow);
 }
 .about-me {
@@ -288,6 +289,13 @@ h3 {
   left: 1150px;
   display: flex;
 }
+.language {
+  display: none; /* Hide all language sections by default */
+}
+
+.language.show {
+  display: block; /* Only show the active language section */
+}
 
 /* footer  */
 footer .social-links a {
@@ -306,6 +314,7 @@ footer .social-links a:hover {
 .contact-links {
   margin: 60px;
 }
+
 /* end footer  */
 @media (max-width: 1400px) {
   .input {
