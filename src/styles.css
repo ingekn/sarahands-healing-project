@@ -279,6 +279,16 @@ h3 {
   /* padding: 20px;
   border: 1px solid var(--light-orange-color); */
 }
+#languageSelect {
+  border-color: gray;
+  color: gray;
+  padding: 1px;
+  position: absolute;
+  top: 45px;
+  left: 1150px;
+  display: flex;
+}
+
 /* footer  */
 footer .social-links a {
   margin: 30px 30px;
@@ -309,6 +319,9 @@ footer .social-links a:hover {
   section {
     padding: 10px;
   }
+  #languageSelect {
+    left: 950px;
+  }
 }
 @media (max-width: 1200px) {
   .email-form-img {
@@ -317,7 +330,11 @@ footer .social-links a:hover {
   .two-columns-grid {
     grid-template-columns: 1fr;
   }
+  #languageSelect {
+    left: 750px;
+  }
 }
+
 @media (max-width: 880px) {
   .about .two-columns-grid {
     grid-template-columns: 1fr;
@@ -369,5 +386,23 @@ footer .social-links a:hover {
   }
   .services .two-columns-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+/* language select positioning */
+
+@media (max-width: 1000px) {
+  #languageSelect {
+    left: 350px;
+  }
+}
+@media (max-width: 770px) {
+  #languageSelect {
+    left: 250px;
+  }
+}
+@media (max-width: 460px) {
+  #languageSelect {
+    left: 150px;
   }
 }

@@ -66,3 +66,27 @@ nextArrow.addEventListener("click", function () {
 //         window.location.hash = targetUrl; // Use window.location.hash to navigate to a specific section of the page
 //     });
 // });
+
+// change language
+// document
+//   .getElementById("languageSelect")
+//   .addEventListener("change", function () {
+//     var selectedLanguage = this.value;
+//     updateContent(selectedLanguage);
+//   });
+
+// function updateContent(language) {
+//   // Get all elements with the language-specific classes
+//   var elements = document.getElementsByClassName(language);
+
+//   // Hide all elements
+//   for (var i = 0; i < elements.length; i++) {
+//     elements[i].style.display = "none";
+//   }
+
+//   // Show elements with the selected language class
+//   var selectedElements = document.getElementsByClassName(language);
+//   for (var j = 0; j < selectedElements.length; j++) {
+//     selectedElements[j].style.display = "block";
+//   }
+// }
