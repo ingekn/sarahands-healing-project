@@ -137,8 +137,9 @@
             Sara está aqui para ajudar.
           </p>
         </section>
+        <!-- form  -->
         <section class="grid two-columns-grid" id="form-section">
-          <div class="email-form">
+          <div class="email-form language english">
             <h1>GET IN TOUCH</h1>
             <p>Leave your name and email so we can get in touch with you!</p>
             <form name="contact" method="POST" data-netlify="true">
@@ -173,6 +174,84 @@
               <p class="disclaimer">We respect your privacy. *</p>
             </form>
           </div>
+          <!-- french  -->
+          <div class="email-form language french">
+            <h1>ENTRER EN CONTACT</h1>
+            <p>
+              Laissez votre nom et votre email afin que nous puissions vous
+              contacter !
+            </p>
+            <form name="contact" method="POST" data-netlify="true">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="input"
+                placeholder="Votre nom"
+                required
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input"
+                placeholder="Votre e-mail"
+                required
+              />
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="input"
+                placeholder="Numéro de téléphone"
+              />
+              <div class="optional">*Optionnel</div>
+
+              <button type="submit" class="btn btn-form">Envoyer</button>
+              <p class="disclaimer">Nous respectons votre vie privée. *</p>
+            </form>
+          </div>
+          <!-- portuguese  -->
+          <div class="email-form language portuguese">
+            <h1>ENTRAR EM CONTATO</h1>
+            <p>
+              Deixe seu nome e e-mail para que possamos entrar em contato com
+              você!
+            </p>
+            <form name="contact" method="POST" data-netlify="true">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="input"
+                placeholder="Seu nome"
+                required
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="input"
+                placeholder="Seu email"
+                required
+              />
+
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                class="input"
+                placeholder="Número de telefone"
+              />
+              <div class="optional">*Opcional</div>
+
+              <button type="submit" class="btn btn-form">Enviar</button>
+              <p class="disclaimer">Nós respeitamos sua privacidade. *</p>
+            </form>
+          </div>
           <div class="form-img">
             <img
               src="src/Images/touch1.jpg"
@@ -181,6 +260,7 @@
             />
           </div>
         </section>
+        <!-- end form  -->
         <section class="about">
           <div class="grid two-columns-grid">
             <div>
